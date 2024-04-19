@@ -1,0 +1,1855 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.w-checkbox {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  display: block;
+}
+
+.w-checkbox:before {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox:after {
+  content: " ";
+  clear: both;
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox-input {
+  float: left;
+  margin: 4px 0 0 -20px;
+  line-height: normal;
+}
+
+.w-checkbox-input--inputType-custom {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-checked {
+  background-color: #3898ec;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #3898ec;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-focus {
+  box-shadow: 0 0 3px 1px #3898ec;
+}
+
+.block-lien-drop-down-deconnexion {
+  background-color: #fff;
+  border: 1px solid #eff0f6;
+  border-radius: 20px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  min-width: 80%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  top: auto;
+  overflow: hidden;
+  box-shadow: 0 0 rgba(20, 20, 43, .08);
+}
+
+.block-menu-button-header {
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-height: 8vh;
+  margin-top: 10px;
+  margin-right: 40px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
+}
+
+.icone-cadenas-connexion {
+  margin-right: 6px;
+}
+
+.brix---dropdown-chevron-2 {
+  color: #fff;
+  flex: 0 auto;
+  align-self: center;
+  width: 14px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.texte-lien-connexion-header {
+  transition: color .3s;
+  display: inline-block;
+}
+
+.block-lien-connexion {
+  margin-left: 0;
+  display: flex;
+}
+
+.nav-bar-header {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.lien-logo-page-d-accueil {
+  color: #211f54;
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.lien-logo-page-d-accueil:hover {
+  color: #4a3aff;
+}
+
+.image-texte-logo-header {
+  align-self: center;
+  height: 6vh;
+  display: block;
+}
+
+.liste-drop-down-bouton-deconnexion-header {
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 0;
+  padding-top: 0;
+  display: flex;
+  position: relative;
+  transform: translate(0);
+}
+
+.liste-drop-down-bouton-deconnexion-header.w--open {
+  flex: 0 auto;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: 0;
+  display: flex;
+  transform: translate(0%);
+}
+
+.image-logo-header {
+  max-width: none;
+  height: 6vh;
+  min-height: auto;
+  display: block;
+}
+
+.texte-bouton-se-deconnecter-header {
+  color: #fff;
+  flex: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.texte-bouton-se-deconnecter-header:hover {
+  color: #4a3aff;
+}
+
+.block-logo-et-boutons {
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.bouton-deconexion-header {
+  color: #fff;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #4a3aff;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  display: flex;
+}
+
+.bouton-deconexion-header:hover {
+  color: #fff;
+  background-color: #281ca5;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.grid-lien-drop-down-deconnexion {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.lien-connexion-header {
+  color: #211f54;
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.lien-connexion-header:hover {
+  color: #4a3aff;
+}
+
+.lien-bouton-deconnexion {
+  color: #6e7191;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.lien-bouton-deconnexion:hover {
+  color: #4a3aff;
+}
+
+.container-navbar-header {
+  max-width: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.block-logo-navbar {
+  justify-content: flex-start;
+  max-height: 8vh;
+  display: flex;
+}
+
+.drop-down-deconexion-header {
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: auto;
+  align-items: flex-end;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.text-lien {
+  color: #2962ff;
+  border-bottom: 1px solid rgba(41, 98, 255, .01);
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color .2s;
+}
+
+.text-lien:hover {
+  color: #1051b9;
+  border-bottom-color: #2962ff;
+}
+
+.text-lien.ms-is-forgot {
+  float: right;
+  font-size: 90%;
+}
+
+.block-page-d-acceuil {
+  flex-flow: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 60px 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+}
+
+.block-texte-et-formulaire-inscription-et-conexion {
+  display: flex;
+}
+
+.uui-layout09_item-icon-wrapper {
+  align-self: flex-start;
+  margin-right: .75rem;
+}
+
+.texte-gris {
+  color: #121331;
+  background-color: #fff;
+  border: 1px solid rgba(18, 19, 49, .25);
+  border-radius: 5px;
+  min-height: 40px;
+  margin-bottom: 1.333em;
+  padding: 8px 12px;
+  transition: box-shadow .2s, color .2s, box-shadow .2s, border-color .2s;
+  position: relative;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .1);
+}
+
+.texte-gris:hover {
+  z-index: 2;
+  box-shadow: none;
+  border-color: #2962ff;
+}
+
+.texte-gris::placeholder {
+  color: rgba(18, 19, 49, .6);
+}
+
+.block-se-connecter {
+  width: 400px;
+  min-width: 400px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+.totre-home-page {
+  color: #000;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  display: flex;
+}
+
+.sous-titre {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.texte-page-d-acceuil {
+  color: #475467;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.ms-checkbox-wrap {
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-top: .3333em;
+  line-height: 22px;
+  display: flex;
+}
+
+.ms-checkbox-wrap.ms-is-smaller {
+  font-size: 90%;
+}
+
+.icon-tick {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ms-checkbox {
+  background-color: #fff;
+  border-width: 1.5px;
+  border-color: rgba(18, 19, 49, .25);
+  border-radius: 33%;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  margin-right: 10px;
+  transition: background-color .2s, border-color .2s;
+}
+
+.ms-checkbox:hover {
+  background-color: #2962ff;
+  background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9));
+  border-color: #2962ff;
+}
+
+.ms-checkbox.w--redirected-checked {
+  background-color: #2962ff;
+  background-image: url('../images/smallcheck.svg');
+  background-size: 70%;
+  border-color: rgba(18, 19, 49, .25);
+  border-radius: 33%;
+}
+
+.ms-checkbox-label {
+  font-weight: 300;
+}
+
+.grid-fonctionalit-s-mpp {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+.texte-simple {
+  text-align: center;
+  flex: none;
+  min-width: 33%;
+}
+
+.uui-lightbox_play-icon {
+  z-index: 2;
+  -webkit-backdrop-filter: saturate(150%) blur(12px);
+  backdrop-filter: saturate(150%) blur(12px);
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 100%;
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+}
+
+.uui-layout09_item {
+  display: flex;
+}
+
+.div-block-video {
+  z-index: 1;
+  background-color: rgba(29, 41, 57, .1);
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.div-block-espace {
+  width: 100%;
+  min-height: 1rem;
+}
+
+.block-inscription {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  display: none;
+}
+
+.ms-list-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image-fond-vid-o {
+  background-color: #f2f4f7;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 35rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.uui-layout09_item-list {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+}
+
+.block-s-enregistrer {
+  width: 400px;
+  min-width: 400px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+.block-texte-page-d-acceuil {
+  align-self: center;
+  display: block;
+}
+
+.bouton-bleu-moyen {
+  color: #fff;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #4a3aff;
+  border-radius: 48px;
+  justify-content: center;
+  margin: 20px 100px;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.bouton-bleu-moyen:hover {
+  color: #fff;
+  background-color: #281ca5;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.block-connexion {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  display: none;
+}
+
+.image-video-1 {
+  border: .25rem solid #101828;
+  border-radius: .5rem;
+  width: 40rem;
+  min-width: 40rem;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 6rem;
+  right: auto;
+}
+
+.uui-text-size-large-2 {
+  color: #475467;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.body {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.texte-pourcnetage-de-l-exercice-termin {
+  color: #344054;
+  border: 1px #d0d5dd;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.block-form-nouveau-chapitre-faire-2 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+}
+
+.block-titre-matiere {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.block-texte-des-chapitres-faire {
+  flex: 1;
+  align-items: center;
+  margin-right: 0;
+  display: flex;
+}
+
+.block-programme-par-mati-re-2 {
+  flex: 1;
+  align-self: center;
+}
+
+.texte-des-chapitres-faire {
+  color: #344054;
+  border: 1px #d0d5dd;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.block-texte-prochain-exercice {
+  flex: 1;
+  align-items: center;
+  margin-right: 0;
+  display: flex;
+}
+
+.block-par-prochain-exercice {
+  border: 1px solid #f2f4f7;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+  box-shadow: 0 4px 6px -2px rgba(16, 24, 40, .03);
+}
+
+.texte-de-la-date-d-el-exercice-termin {
+  color: #344054;
+  border: 1px #d0d5dd;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.block-mon-programme {
+  margin: 20px 40px;
+  display: block;
+}
+
+.contenu-mes-prochains-exercices {
+  margin-top: 0;
+}
+
+.block-titre-niveau {
+  color: #211f54;
+}
+
+.lien-bouton-plus {
+  grid-column-gap: .5rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #7f56d9;
+  border: 1px solid #7f56d9;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.lien-bouton-plus:hover {
+  background-color: #6941c6;
+  border-color: #6941c6;
+}
+
+.lien-bouton-plus:focus {
+  background-color: #7f56d9;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+}
+
+.lien-bouton-plus.is-button-small {
+  grid-column-gap: .5rem;
+  background-color: #4a3aff;
+  margin-left: 5px;
+  margin-right: 0;
+  padding: .5rem 1rem;
+}
+
+.form-liste-d-roulante-de-niveau {
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.block-saisie-de-texte-avec-bouton-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-des-onglets-du-programme {
+  display: flex;
+}
+
+.lien-bouton-moins {
+  grid-column-gap: .5rem;
+  color: #344054;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #4a3aff;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.lien-bouton-moins:hover {
+  color: #1d2939;
+  background-color: #f9fafb;
+}
+
+.lien-bouton-moins:focus {
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f2f4f7;
+}
+
+.lien-bouton-moins.is-button-small {
+  grid-column-gap: .5rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.block-texte-de-la-date-de-l-exercice-termin {
+  flex: 0 auto;
+}
+
+.block-list-des-chapitres-faire {
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.block-programme-par-mati-re-3 {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.onglet-du-programme {
+  margin-top: 10vh;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: block;
+}
+
+.block-titre-chapitre-termin {
+  flex-flow: row;
+  align-items: center;
+}
+
+.lien-croix-de-supression {
+  border-radius: .5rem;
+  margin-left: 0;
+  transition: all .3s;
+}
+
+.lien-croix-de-supression:hover {
+  color: #475467;
+  background-color: #f9fafb;
+}
+
+.block-programme-par-mati-re-1 {
+  display: flex;
+}
+
+.titre-niveau {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.block-du-texte-du-poucentage-de-l-exercice-termin {
+  flex: 0 auto;
+}
+
+.contenu-ma-progression {
+  margin-top: 0;
+}
+
+.block-texte-onglet {
+  flex: 1;
+  margin-left: 0;
+}
+
+.block-ma-progression {
+  flex-flow: row;
+  margin: 20px;
+  display: none;
+}
+
+.form-nouveau-chapitre-faire {
+  margin-bottom: 0;
+}
+
+.block-succes-form {
+  color: #4a3aff;
+  background-color: #fff;
+  border: 1px solid #a0a3bd;
+  border-radius: 24px;
+  padding: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 3px 8px rgba(33, 31, 84, .2);
+}
+
+.titre-chapitre-termin {
+  color: #211f54;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contenu-des-onglets {
+  flex: 1;
+}
+
+.block-texte-de-l-exercice-termin {
+  flex: 1;
+  display: flex;
+}
+
+.titre-matiere {
+  color: #211f54;
+}
+
+.sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton {
+  background-color: #fff;
+  border: 1px #4a3aff;
+  border-radius: 10px;
+  flex: 1;
+  align-self: center;
+  margin-bottom: 0;
+  line-height: 14px;
+  transition: box-shadow .3s, color .3s, border-color .3s;
+  box-shadow: 0 2px 7px rgba(20, 20, 43, .08);
+}
+
+.sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton:hover {
+  border-color: #4a3aff;
+  box-shadow: 0 2px 12px rgba(20, 20, 43, .1);
+}
+
+.sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton:focus {
+  color: #211f54;
+  border-color: #4a3aff;
+}
+
+.sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton::placeholder {
+  color: #6e7191;
+  font-size: 18px;
+}
+
+.block-boutons-plus-moins-et-croix {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  flex-flow: row;
+  flex: 0 auto;
+  align-items: center;
+  display: flex;
+}
+
+.lien-onglets-du-programme {
+  color: #211f54;
+  background-color: #fff;
+  border: 2px solid #f7f7fc;
+  border-radius: 14px;
+  align-items: center;
+  width: 100%;
+  margin: 12px 5px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: box-shadow .3s, border-width .3s, border-color .3s, color .3s;
+  display: flex;
+  box-shadow: 0 2px 6px rgba(20, 20, 43, .06);
+}
+
+.lien-onglets-du-programme:hover {
+  border-color: #4a3aff;
+}
+
+.lien-onglets-du-programme.w--current {
+  text-align: left;
+  background-color: #fff;
+  border-width: 2px;
+  border-color: #4a3aff;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 2px 12px rgba(20, 20, 43, .08);
+}
+
+.texte-onglet {
+  text-align: center;
+}
+
+.icone-croix-2 {
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+}
+
+.texte-exercice, .texte-exercice-termin {
+  color: #344054;
+  border: 1px #d0d5dd;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.lien-pour-croix {
+  color: #667085;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  transition: all .3s;
+  display: flex;
+}
+
+.lien-pour-croix:hover {
+  color: #475467;
+  background-color: #f9fafb;
+}
+
+.block-par-exercice-termin {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.liste-d-roulante-niveau {
+  color: #000;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.icone-croix {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.bouton-ajouter-une-chapitre {
+  color: #fff;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #4a3aff;
+  border-radius: 48px;
+  justify-content: center;
+  align-self: center;
+  margin-top: 0;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.bouton-ajouter-une-chapitre:hover {
+  color: #fff;
+  background-color: #281ca5;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.block-par-chapitre-termin {
+  flex-flow: column;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+}
+
+.block-par-chapitre-termin:hover {
+  transform: translate(8px);
+}
+
+.block-lien-connexion-2 {
+  margin-left: 0;
+  display: flex;
+}
+
+.block-lien-drop-down-deconnexion-2 {
+  background-color: #fff;
+  border: 1px solid #eff0f6;
+  border-radius: 20px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  min-width: 80%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  top: auto;
+  overflow: hidden;
+  box-shadow: 0 0 rgba(20, 20, 43, .08);
+}
+
+.texte-bouton-se-deconnecter-header-2 {
+  color: #fff;
+  flex: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.texte-bouton-se-deconnecter-header-2:hover {
+  color: #4a3aff;
+}
+
+.bouton-deconexion-header-2 {
+  color: #fff;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #4a3aff;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  display: flex;
+}
+
+.bouton-deconexion-header-2:hover {
+  color: #fff;
+  background-color: #281ca5;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.drop-down-deconexion-header-2 {
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: auto;
+  align-items: flex-end;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+.block-menu-button-header-2 {
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-height: 8vh;
+  display: flex;
+}
+
+.bouton-deconexion-header-3 {
+  color: #fff;
+  text-align: center;
+  transform-style: preserve-3d;
+  background-color: #4a3aff;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+  display: flex;
+}
+
+.bouton-deconexion-header-3:hover {
+  color: #fff;
+  background-color: #281ca5;
+  transform: translate3d(0, -3px, .01px);
+}
+
+@media screen and (min-width: 1280px) {
+  .block-menu-button-header {
+    display: flex;
+  }
+
+  .brix---dropdown-chevron-2 {
+    display: inline-block;
+  }
+
+  .block-lien-connexion {
+    display: none;
+  }
+
+  .nav-bar-header {
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .liste-drop-down-bouton-deconnexion-header {
+    align-self: center;
+    padding-top: 0;
+  }
+
+  .drop-down-deconexion-header {
+    display: flex;
+  }
+
+  .block-page-d-acceuil {
+    margin-top: 10vh;
+    margin-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .block-inscription, .block-connexion {
+    display: none;
+  }
+
+  .body {
+    flex-flow: column;
+  }
+
+  .block-menu-button-header-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div-block-mot-de-passe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .block-page-d-acceuil {
+    margin-top: 10vh;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .block-texte-et-formulaire-inscription-et-conexion {
+    align-self: auto;
+  }
+
+  .block-se-connecter {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .totre-home-page {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .sous-titre {
+    font-size: 1.2em;
+  }
+
+  .formulaire-connexion {
+    margin-bottom: 0;
+  }
+
+  .div-block-video {
+    height: 100%;
+  }
+
+  .formulaire-inscription {
+    margin-bottom: 0;
+  }
+
+  .block-inscription {
+    margin-bottom: 60px;
+  }
+
+  .block-s-enregistrer {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .block-texte-page-d-acceuil {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .bouton-bleu-moyen {
+    background-color: #4a3aff;
+    margin: 20px 100px;
+  }
+
+  .div-block-adresse-email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .block-par-prochain-exercice {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: none;
+  }
+
+  .block-mon-programme {
+    margin-bottom: 10px;
+  }
+
+  .lien-bouton-plus.is-button-small {
+    background-color: #4a3aff;
+  }
+
+  .block-list-des-chapitres-faire {
+    width: 100%;
+    padding: 5px;
+    display: none;
+  }
+
+  .block-ma-progression {
+    display: none;
+  }
+
+  .block-par-exercice-termin {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .block-lien-drop-down-deconnexion {
+    box-shadow: none;
+    background-color: #fff;
+    border-width: 0;
+    border-radius: 20px;
+    min-width: auto;
+  }
+
+  .block-lien-drop-down-deconnexion.w--open {
+    position: static;
+  }
+
+  .block-menu-button-header {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .block-lien-connexion {
+    display: flex;
+  }
+
+  .nav-bar-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .liste-drop-down-bouton-deconnexion-header {
+    padding-top: 0;
+    position: static;
+  }
+
+  .liste-drop-down-bouton-deconnexion-header.w--open {
+    transform: none;
+  }
+
+  .texte-bouton-se-deconnecter-header {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .bouton-deconexion-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .block-page-d-acceuil {
+    flex-flow: column;
+    margin-top: 10vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .image-fond-vid-o {
+    min-height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .uui-layout09_item-list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-video-1 {
+    width: 100%;
+    min-width: 100%;
+    margin-right: -40%;
+    position: static;
+    left: auto;
+    right: -2rem;
+  }
+
+  .block-titre-matiere {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .block-texte-prochain-exercice {
+    margin-right: 1rem;
+  }
+
+  .block-par-prochain-exercice {
+    align-items: flex-start;
+  }
+
+  .block-mon-programme {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form-liste-d-roulante-de-niveau {
+    margin-bottom: 24px;
+  }
+
+  .block-list-des-chapitres-faire {
+    padding-left: 1.25rem;
+  }
+
+  .onglet-du-programme {
+    display: block;
+  }
+
+  .titre-niveau {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .block-ma-progression {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form-nouveau-chapitre-faire {
+    margin-bottom: 24px;
+  }
+
+  .block-texte-de-l-exercice-termin {
+    align-self: center;
+  }
+
+  .lien-onglets-du-programme {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .block-par-exercice-termin {
+    flex-flow: row;
+    display: flex;
+  }
+
+  .bouton-ajouter-une-chapitre {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .block-par-chapitre-termin {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .block-par-chapitre-termin:hover {
+    transform: translate(6px);
+  }
+
+  .block-lien-drop-down-deconnexion-2 {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .block-lien-drop-down-deconnexion-2.w--open {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-menu-button-header {
+    margin-right: 20px;
+    display: flex;
+  }
+
+  .block-lien-connexion {
+    display: flex;
+  }
+
+  .image-texte-logo-header {
+    flex: 0 auto;
+  }
+
+  .bouton-deconexion-header {
+    padding: 10px 24px;
+  }
+
+  .block-page-d-acceuil {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .totre-home-page {
+    font-size: 18px;
+  }
+
+  .texte-page-d-acceuil {
+    font-size: 1rem;
+  }
+
+  .grid-fonctionalit-s-mpp {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .uui-lightbox_play-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .div-block-espace {
+    min-height: .75rem;
+  }
+
+  .image-fond-vid-o {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .uui-layout09_item-list {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .bouton-bleu-moyen {
+    font-size: 18px;
+    line-height: 12px;
+  }
+
+  .image-video-1 {
+    width: 100%;
+    min-width: 100%;
+    margin-right: -30%;
+    position: static;
+  }
+
+  .uui-text-size-large-2 {
+    font-size: 1rem;
+  }
+
+  .texte-pourcnetage-de-l-exercice-termin {
+    width: auto;
+  }
+
+  .block-titre-matiere {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .texte-des-chapitres-faire {
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 100%;
+    display: block;
+  }
+
+  .block-texte-prochain-exercice {
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+
+  .block-par-prochain-exercice {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .texte-de-la-date-d-el-exercice-termin {
+    width: auto;
+  }
+
+  .block-mon-programme {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+
+  .lien-bouton-plus {
+    font-size: 1rem;
+  }
+
+  .lien-bouton-plus:hover {
+    background-color: #7f56d9;
+    border-color: #7f56d9;
+  }
+
+  .lien-bouton-moins {
+    padding-left: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .lien-bouton-moins:hover {
+    color: #344054;
+    background-color: #fff;
+  }
+
+  .onglet-du-programme {
+    flex-direction: column;
+    margin-top: 12vh;
+  }
+
+  .lien-croix-de-supression:hover {
+    color: #667085;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .titre-niveau {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .block-ma-progression {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .block-texte-de-l-exercice-termin {
+    flex: 1;
+    align-self: flex-start;
+  }
+
+  .sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton {
+    min-height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .block-boutons-plus-moins-et-croix {
+    align-self: stretch;
+  }
+
+  .lien-onglets-du-programme {
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .texte-exercice {
+    width: auto;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  .texte-exercice-termin {
+    width: auto;
+  }
+
+  .lien-pour-croix {
+    margin-left: 0;
+    position: static;
+    top: .5rem;
+    bottom: auto;
+    left: auto;
+    right: .5rem;
+  }
+
+  .lien-pour-croix:hover {
+    color: #667085;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .block-par-chapitre-termin {
+    padding: 0;
+  }
+
+  .block-lien-connexion-2 {
+    display: flex;
+  }
+
+  .bouton-deconexion-header-2 {
+    padding: 20px 32px;
+  }
+
+  .block-menu-button-header-2 {
+    display: none;
+  }
+
+  .bouton-deconexion-header-3 {
+    padding: 20px 32px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .block-menu-button-header {
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  .block-lien-connexion {
+    margin-left: 0;
+  }
+
+  .block-texte-logo-header {
+    display: none;
+  }
+
+  .bouton-deconexion-header {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container-navbar-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .block-page-d-acceuil {
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .texte-gris {
+    font-size: 12px;
+  }
+
+  .block-se-connecter {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .totre-home-page {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .ms-checkbox-wrap {
+    display: flex;
+  }
+
+  .formulaire-connexion {
+    width: 100%;
+  }
+
+  .grid-fonctionalit-s-mpp {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .formulaire-inscription {
+    width: 100%;
+  }
+
+  .block-s-enregistrer {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .bouton-bleu-moyen {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .image-video-1 {
+    width: 150%;
+    min-width: 150%;
+    margin-right: -100%;
+  }
+
+  .block-programme-par-mati-re-2 {
+    flex-flow: row;
+    flex: 1;
+    order: 0;
+    justify-content: center;
+    align-self: auto;
+  }
+
+  .texte-des-chapitres-faire {
+    font-size: 70%;
+    line-height: 100%;
+  }
+
+  .block-par-prochain-exercice {
+    flex-flow: column;
+  }
+
+  .block-mon-programme {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .menu-des-onglets-du-programme {
+    flex-flow: column;
+  }
+
+  .onglet-du-programme {
+    margin-top: 12vh;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .block-texte-onglet {
+    margin-left: 13px;
+  }
+
+  .block-ma-progression {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .sasie-de-donn-es-du-nouveau-chapitre-faire-avec-bouton::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .lien-onglets-du-programme {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .texte-exercice {
+    font-size: 70%;
+    line-height: 100%;
+  }
+
+  .lien-pour-croix {
+    position: static;
+  }
+
+  .block-par-chapitre-termin {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .block-lien-connexion-2 {
+    margin-left: 0;
+  }
+
+  .bouton-deconexion-header-2, .bouton-deconexion-header-3 {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+#w-node-_68429bbb-48b7-9417-5f30-faff9883962e-a4499732 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_68429bbb-48b7-9417-5f30-faff9883962f-a4499732, #w-node-_68429bbb-48b7-9417-5f30-faff98839635-a4499732, #w-node-_68429bbb-48b7-9417-5f30-faff9883963b-a4499732 {
+  align-self: start;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-_68429bbb-48b7-9417-5f30-faff9883962e-a4499732, #Lien-contact-dropdown-header.w-node-_9b3d8189-a0f1-666e-3f9b-e19c210eb0a3-2355f643 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+}
